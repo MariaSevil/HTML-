@@ -1,0 +1,6 @@
+{
+    "html.suggest.html5": true,
+    "files.associations": {
+        "*.vscode-resource": "/path./to/your/progect/img"
+    }
+}
