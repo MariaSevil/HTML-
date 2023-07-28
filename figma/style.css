@@ -3,89 +3,179 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --main-color: #3A68B8;
+    --white-color: #FFF;
+    --font: "Open Sans", sans-serif;
+}
+body{
+background-color: #020A18;
+font-family: 'Open Sans', sans-serif;
+color: #FFF;
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
 .header {
-    background-color: #020A18;
-    width: 1921px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1920px;
     height: 100px;
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-}
-.main-container {
-    
+    border-radius: 15px;
+    /*opacity: 0.019999999552965164;*/
     background-color: #020A18;
-    color: #FFFFFF;
+    /*backdrop-filter: blur(100px);*/
+
 }
-.main{
+
+.header nav a {
+    color:#FFFFFF;
+    /*font-family: 'Open Sans';*/
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.slide {
     display: flex;
+    justify-content: center;/*space-between;*/
+    align-items: center;
     width: 1146px;
     height: 415px;
-    flex-direction: row;
-    margin-bottom: 30px;
-    color: #FFFFFF;
-}
-.fixed-image {
-    width: 414px;
-    height: 415px;
-}
-
-.info_h1 {
-    display: flex;
-    width: 604px;
-    flex-direction: column;
-    flex-shrink: 0;
-    color: #FFFFFF;
-    font-size: 55px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 130%;
-}
-
-.sub-info {
+    padding: 50px;
     color: #3A68B8;
+    flex-shrink: 0;
+}
+
+.slide-content {
+    flex-basis: 50%;
+}
+.upper-text {
+    color: var(--main-color);
+    font-family: var(--font);
     font-size: 18px;
-    font-style: normal;
     font-weight: 600;
     line-height: 160%;
     text-transform: uppercase;
-    width: 265px;
+    width: 1000px;
+    white-space: nowrap;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    right: -100px;
 }
-.info {
-display: flex;
-width: 1146px;
-height: 415px;
-flex-direction: row;
-padding: 50px;
 
+.slide-content {
+    flex-basis: 50%;
 }
-.info_paragraph {
-    display: flex;
+.main-heading {
+    width: 604px;
+    color: var(--white-color);
+    font-family: var(--font);
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 120%;
+    position: relative;
+    right: -100px;
+}
+
+.slide-content{
+    flex-basis: 50%;
+}
+.description {
     width: 558px;
-    flex-direction: column;
-    flex-shrink: 0;
-    color: #FFFFFF;
+    color: var(--white-color);
+    font-family: var(--font);
     font-size: 18px;
-    font-style: normal;
     font-weight: 600;
     line-height: 160%;
+    margin-top: 20px;
+    position: relative;
+    right: -100px;
 }
-.info_buttons {
-display: inline-flex;
-padding: 15px 30px;
-align-items: flex-start;
-gap: 10px;
-border: radius 5px;
-background: #3A68B8
+
+.action {
+    display:flex;
+    align-items: center;
+    gap: 10px;
+    flex-basis: 50%;
+    position: relative;
+    right: -100px;
+}
+.watch-video {
+    color: var(--white-color);
+    font-family: var(--font);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.cta-button {
+    display: inline-flex;
+    padding: 15px 30px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 5px;
+    background: var(--main-color);
+    color: var(--white-color);
+    font-family: var(--font);
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    margin: 10px 0;
+    position: relative;
+    right: -30px;
+    position: relative;
+    left: -10px;
+}
+
+.fixed-image {
+    width: 414px;
+    height: 415px;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    background:  lightgray 50% / cover no-repeat;
+    opacity: 0.6;
+    position: relative;
+    left: -100px;
 
 }
-.img_polygon {
-width: 26px;
-height: 27px;
-}
-.Botton{
+
+.Botton {
     display: flex;
-    text-align: center;
-    gap: 10px;
-    width: 1146.449px;
-    height: 59px;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 200px;
+}
+
+.footer-icon {
+    flex-shrink: 0;
+    margin: 0 15px;
+    margin-right: 50px;
+}
+
+.icon1 {
+
+    width: 54.604px;
+    height: 49.972px;
+    fill: #E9327C;
+}
+
+.icon2 {
+
+    width: 47.868px;
+    height: 45.621px;
+    fill: #3A68B8;
+}
+
+.footer-icon:not(:first-child){
+    margin-left: 10px;
 }
