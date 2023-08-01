@@ -1,0 +1,133 @@
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+flex-wrap: wrap;
+background: #FAFAFA;
+width: 1920px;
+height: 919px;
+flex-shrink: 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-text{
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+}
+.title-text h1 {
+    color: #000;
+    font-family: 'Gilroy-Bold';
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.title-text p {
+    color: #666;
+    text-align: center;
+    font-family: 'Gilroy-Regular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+.background {
+margin: 0 10px;
+background-color:#FFFFFF;
+width: 370px;
+height: 549px;
+}
+.BG{
+width: 370px;
+height: 549px;
+flex-shrink: 0;
+color: #FFFFFF;
+}
+.button {
+width: 150px;
+height: 50px;
+color:#F25822;
+background: #FFFFFF;
+}
+.description-text{
+    width: 68px;
+height: 20px;
+flex-shrink: 0;
+color: #FFFFFF;
+color: #FFF;
+text-align: center;
+font-family: Gilroy-Bold;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 19.5px */
+}
+.text {
+width: 310px;
+height: 63px;
+flex-shrink: 0;
+color: #AAAAAA;
+
+}
+.title-3 {
+width: 187px;
+height: 30px;
+flex-shrink: 0;
+color: #000000;
+}
+
+.icon {
+width: 370px;
+height: 270px;
+flex-shrink: 0;
+}
+.icon4{
+width: 4px;
+height: 8px;
+flex-shrink: 0;
+color: #FFFFFF;
+margin: 10px 0;
+}
+.icon2{
+width: 396px;
+height: 297px;
+flex-shrink: 0;
+background:lightgray 50% / cover no-repeat;
+}
+.icon3{
+width: 400px;
+height: 300px;
+/*flex-shrink: 0;*/
+background:lightgray 50% / cover no-repeat;
+}
+.icon1{
+width: 385px;
+height: 289px;
+flex-shrink: 0;
+background: lightgray 50% / cover no-repeat;;
+}
+.title-2 {
+width: 208px;
+height: 30px;
+}
+
+.title-3 {
+width: 204px;
+height: 30px;
+
+}
+.icons-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
